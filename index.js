@@ -9,11 +9,11 @@ gridContainer.style.marginTop = "50px";
 gridContainer.style.marginBottom = "50px";
 gridContainer.style.backgroundColor = "white";
 
-// make 16 divs
-for (let i = 0; i < 16; i++) {
+// create the div grid
+for (let i = 0; i < 16 * 16; i++) {
   let square = document.createElement("div");
-  square.style.width = "25%";   // 4 across
-  square.style.height = "25%";  // 4 down
+  square.style.width = `${100 / 16}%`;   // 6.25% width
+  square.style.height = `${100 / 16}%`;  // 6.25% height
   square.style.boxSizing = "border-box";
   square.style.border = "1px solid #ddd";
   gridContainer.appendChild(square);
